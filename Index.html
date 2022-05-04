@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LitClub"Fantasy"</title>
+    <link rel="stylesheet" href="./Styles/Styles.css">
+    <link href="http://fonts.cdnfonts.com/css/medium" rel="stylesheet">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar secondary-text">
+            <div class="nav-bar-wrapper">
+                <div class="nav-logo-wrapper">
+                    <i class="nav-logo"></i>
+                    <span class="nav-title">LitClub"Fantasy"</span>
+                </div>
+
+                <div class="nav-menu-wrapper">
+                    <span class="nav-menu-item">About us</span>
+                    <span class="nav-menu-item">News</span>
+                    <span class="nav-menu-item">Blog</span>
+                    <i class="nav-menu-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+ 
+    
+    <div class="page-wrapper">
+       <section class="registration-section">
+           <div class="registration-form-wrapper"> 
+                <div class="form-card flex-column">
+                    <div class="form-wrapper">
+                        <h2 class="form-title">Order book</h2>
+                        
+                            <form class="registration-form flex-column" action="submit">
+
+                                <label class="form-label" for="name">Name</lable>
+                                <input type="text" class="form-input" id="name" name="name" placeholder="Type name" required>
+
+                                <label class="form-label" for="last name">Last name</lable>
+                                <input type="text" class="form-input" id="last name" name="last name" placeholder="Type last name" required> 
+
+                                <label class="form-label" for="phone number">Phone number</lable>
+                                <input type="tel" class="form-input" id="phone number" name="phone number" placeholder="+38 (_) __ __ __" required> 
+
+                                <label form="select">Book</label>
+                                <select name="select" id="select" class="form-input">
+                                    <option value="A Song of Ice and Fire">A Song of Ice and Fire</option>
+                                    <option value="Shannara">Shannara</option>
+                                    <option value="Witcher">Witcher</option>
+                                    <option value="Lord of the Rings">Lord of the Rings</option>
+                                </select>
+
+                                <button class="form-order-button" type="order">To order</button> 
+                            </form>
+                    </div>
+                </div>
+           </div>
+       </section> 
+    </div>
+<!--оболочка формы регистрации-->
+
+    <footer class="footer secondary-text">
+        Ⓒ 2022 LitClub"Fantasy". All rights reserved.
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>    

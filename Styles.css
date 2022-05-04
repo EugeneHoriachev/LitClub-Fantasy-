@@ -1,0 +1,183 @@
+* {
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+:root {
+    --main-text-color: #000000;
+    --button-dimmed: #B5946F;
+    --button-active: #DD933C;
+    --secondary-bg: #FFD198;
+    --border-color: #000000;
+    --background-color: #BF9158 ;
+}
+
+body {
+    font-family: Medium;
+    background-color:var(--background-color);
+    background-size: cover;
+}
+/* Эта херня должна по-хорошему задать фон, но сотрудничать со мной отказывается */
+
+.page-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    left: 450px;
+}
+
+.header, .page-wrapper {
+    max-width: 1650px;
+    margin: 0 auto;
+}
+
+.registration-section{
+    width: 100%;
+}
+
+.registration-form-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.registration-form{
+    height: 400px;
+    width: 250px;
+}
+
+
+/*NAV HEADER*/
+.nav-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px 100px 600px;
+}
+.nav-logo-wrapper {
+    position: relative;
+    padding-left: 80px;
+}
+
+.nav-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+
+.nav-logo {
+    position: absolute;
+    background-image: url("../Styles/29302.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 512px;
+    height: 512px;
+    right: 300px;
+
+}
+
+.nav-menu-item{
+    font-size: 14px;
+    padding-left: 32px;
+}
+
+.nav-menu:nth-child(3){
+    padding-right: 36px;
+
+}
+
+/*FORM*/
+
+.form-card {
+    max-width: 560px;
+    min-width: 350px;
+    height: 560px;
+    background-color: var(--secondary-bg);
+    border-radius: 25px;
+    box-shadow: 0px opx 7px 3px beige;
+}
+
+.form-wrapper {
+    min-width: 50%;
+    padding: 20px;
+}
+
+.form-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 70px;
+    text-align: left;
+    padding-bottom: 32px;
+    min-width: 400px;
+}
+
+select, input {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 16px;
+}
+
+.form-input {
+    width: 240px;
+    height: 36px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+
+.form-label {
+    padding: 24px 0 8px 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.form-label:first-of-type {
+    padding-top: 0;
+}
+
+.form-order-button {
+    background-color: var(--button-active);
+    border-radius: 20px;
+    color: var(--border-color);
+    width: 240px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+.footer {
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.registration-form-image {
+    height: 600px;
+}
+
+/* Utilitary*/
+
+.secondary-text {
+    color: var(--main-text-color);
+    font-size: 14px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
